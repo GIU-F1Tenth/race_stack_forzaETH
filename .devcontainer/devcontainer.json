@@ -2,7 +2,7 @@
     "name": "ForzaETH Race Stack Humble",
     "privileged": true,
     "remoteUser": "${localEnv:USER}",
-    "image": "jet_forzaeth_racestack_ros2:humble",
+    "image": "sim_x86_forzaeth_racestack_ros2:humble",
     // "image": "nuc_forzaeth_racestack_ros2:humble",
     "initializeCommand": "/bin/bash -c 'source ${localWorkspaceFolder}/.devcontainer/xauth_setup.sh'",
     "workspaceFolder": "/home/${localEnv:USER}/ws/src/race_stack/",
@@ -34,18 +34,20 @@
         "ROS_LOCALHOST_ONLY": "0",
         "ROS_DOMAIN_ID": "6",
         "USERNAME": "${localEnv:USER}",
-        "RCUTILS_COLORIZED_OUTPUT": "1"
+        "RCUTILS_COLORIZED_OUTPUT": "1",
+        "WAYLAND_DISPLAY": "${localEnv:WAYLAND_DISPLAY}",
+        "XDG_RUNTIME_DIR": "/tmp"
     },
     "runArgs": [
         "--name",
-        "nuc_forzaeth_racestack_ros2_humble",
+        "sim_x86_forzaeth_racestack_ros2_humble",
         "--net",
         "host",
-        "--privileged"
+        "--privileged",
+        "--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw"
     ],
     "mounts": [
         "source=/home/${localEnv:USER}/.Xauthority,target=/tmp/.Xauthority,type=bind,consistency=cached",
-        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
         "source=/dev,target=/dev,type=bind,consistency=cached",
         "source=${localWorkspaceFolder}/../cache/humble/build,target=/home/${localEnv:USER}/ws/build,type=bind",
         "source=${localWorkspaceFolder}/../cache/humble/install,target=/home/${localEnv:USER}/ws/install,type=bind",

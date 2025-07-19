@@ -17,3 +17,12 @@ services:
         - UID=${UID}
         - GID=${GID}
     image: jet_forzaeth_racestack_ros2:humble
+  sim_x86:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile.x86
+      args:
+        - USERNAME=${USER}
+        - UID=${UID}
+        - GID=${GID}
+    image: sim_x86_forzaeth_racestack_ros2:humble

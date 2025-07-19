@@ -36,9 +36,85 @@
 
 # py
 *.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
 
 #vscode
 .vscode
+
+# ROS2 build artifacts
+build/
+install/
+log/
+.colcon_install_layout
+.colcon_build_layout
+
+# ROS1 build artifacts (if any)
+devel/
+
+# Cache directories
+../cache/
+cache/
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+.#*
+\#*#
+
+# IDE files
+*.sublime-*
+.idea/
+*.code-workspace
+.project
+.cproject
+.settings/
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Docker files (if any custom ones)
+.dockerignore
+docker-compose.override.yml
+
+# Configuration files with sensitive data
+*.secret
+*.key
+*.pem
+config/secrets/
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Test results
+test_results/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Documentation build
+docs/_build/
+doc/_build/
+*.egg-info/
+dist/
 
 #maps
 stack_master/maps/*
@@ -53,4 +129,35 @@ stack_master/maps/hangar_1905_v0/ot_sectors.yaml
 .vscode/build
 .vscode/log
 .vscode/c_cpp_properties.json
+
+# ROS bag files (can be large)
+*.bag
+*.db3
+*.mcap
+
+# Launch and parameter overrides
+*_override.launch.py
+*_local.yaml
+*_dev.yaml
+
+# Generated messages/services
+**/msg_gen/
+**/srv_gen/
+**/action_gen/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+
+# Generated scripts
+setup_external_ros2_fixed.sh
+reset_ros2_environment.sh
+simple_connection_test.sh
+direct_container_test.sh
+diagnose_ros2_discovery.sh
+test_external_connection.sh
+fastdds_profile.xml
 

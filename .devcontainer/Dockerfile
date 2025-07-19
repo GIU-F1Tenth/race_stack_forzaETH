@@ -2,7 +2,6 @@ FROM osrf/ros:humble-desktop
 ARG USERNAME
 ARG UID
 ARG GID
-
 ENV SHELL /bin/bash
 
 
