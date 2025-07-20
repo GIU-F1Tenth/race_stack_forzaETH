@@ -24,4 +24,12 @@
         120
     ],
     "editor.renderWhitespace": "trailing",
+    "files.associations": {
+        "*.yaml": "yaml",
+        "*.yml": "yaml"
+    },
+    "yaml.format.enable": true,
+    "yaml.validate": true,
+    "yaml.hover": true,
+    "yaml.completion": true
 }
