@@ -1,0 +1,17 @@
+ot_interpolator:
+  ros__parameters:
+    map_name: "Monza"
+    n_sectors: 2
+    yeet_factor: 1.25
+    spline_len: 30
+    ot_sector_begin: 0.5
+    
+    Overtaking_sector0:
+      start: 0
+      end: 100
+      ot_flag: false
+    
+    Overtaking_sector1:
+      start: 101
+      end: 200
+      ot_flag: false

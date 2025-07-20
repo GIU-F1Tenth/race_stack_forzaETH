@@ -1,0 +1,70 @@
+{
+  "map_info_str": {
+    "data": "Montreal track - Basic configuration for simulator"
+  },
+  "est_lap_time": {
+    "data": 60.0
+  },
+  "centerline_markers": {
+    "markers": []
+  },
+  "global_waypoints": {
+    "markers": []
+  },
+  "raceline_markers": {
+    "markers": []
+  },
+  "centerline_waypoints": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "map"
+    },
+    "wpnts": [
+      {
+        "id": 0,
+        "s_m": 0,
+        "d_m": 0,
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "d_right": 1.1,
+        "d_left": 1.1,
+        "psi_rad": 0.0,
+        "kappa_radpm": 0.0,
+        "vx_mps": 0,
+        "ax_mps2": 0
+      }
+    ]
+  },
+  "global_traj_markers_iqp": {
+    "markers": []
+  },
+  "global_traj_markers_sp": {
+    "markers": []
+  },
+  "global_traj_wpnts_iqp": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "map"
+    },
+    "wpnts": []
+  },
+  "global_traj_wpnts_sp": {
+    "header": {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_id": "map"
+    },
+    "wpnts": []
+  },
+  "trackbounds_markers": {
+    "markers": []
+  }
+}
