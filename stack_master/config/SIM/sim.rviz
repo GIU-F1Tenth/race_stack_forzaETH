@@ -55,8 +55,7 @@ Visualization Manager:
       Show Arrows: true
       Show Axes: true
       Show Names: false
-      Tree:
-        {}
+      Tree: {}
       Update Interval: 0
       Value: false
     - Alpha: 0.699999988079071
@@ -109,8 +108,7 @@ Visualization Manager:
         - Class: rviz_default_plugins/MarkerArray
           Enabled: true
           Name: Lattice Viz
-          Namespaces:
-            {}
+          Namespaces: {}
           Topic:
             Depth: 5
             Durability Policy: Volatile
@@ -368,8 +366,7 @@ Visualization Manager:
             - Class: rviz_default_plugins/MarkerArray
               Enabled: true
               Name: Breakpoints
-              Namespaces:
-                {}
+              Namespaces: {}
               Topic:
                 Depth: 5
                 Durability Policy: System Default
@@ -380,8 +377,7 @@ Visualization Manager:
             - Class: rviz_default_plugins/Marker
               Enabled: true
               Name: Detect Bound
-              Namespaces:
-                {}
+              Namespaces: {}
               Topic:
                 Depth: 5
                 Durability Policy: Volatile
@@ -393,8 +389,7 @@ Visualization Manager:
             - Class: rviz_default_plugins/MarkerArray
               Enabled: true
               Name: Obstacle Markers New
-              Namespaces:
-                {}
+              Namespaces: {}
               Topic:
                 Depth: 5
                 Durability Policy: Volatile
@@ -409,8 +404,7 @@ Visualization Manager:
             - Class: rviz_default_plugins/MarkerArray
               Enabled: true
               Name: Static/Dynamic Markers
-              Namespaces:
-                {}
+              Namespaces: {}
               Topic:
                 Depth: 5
                 Durability Policy: Volatile
@@ -496,22 +490,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 12.151151657104492
+      Distance: 200.0
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.2561830282211304
-        Y: 2.806946039199829
-        Z: 1.4169552326202393
+        X: 60
+        Y: 10
+        Z: 0
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5397963523864746
+      Pitch: 1.5697963267948966
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
       Yaw: 4.733580589294434
