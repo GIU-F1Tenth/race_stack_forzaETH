@@ -54,6 +54,7 @@ pip-delete-this-directory.txt
 build/
 install/
 log/
+data/
 .colcon_install_layout
 .colcon_build_layout
 
