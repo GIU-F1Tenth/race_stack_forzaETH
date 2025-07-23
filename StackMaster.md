@@ -44,3 +44,5 @@ ros2 launch stack_master head_to_head_launch.xml racecar_version:=<NUCx used> LU
 
 
 ros2 launch stack_master base_system_launch.xml map_name:=hangar_1905_v0 sim:=true racecar_version:=sim
+
+ros2 launch stack_master base_system_launch.xml map_name:=testMap1 sim:=true racecar_version:=sim

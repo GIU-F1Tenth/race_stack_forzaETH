@@ -31,5 +31,6 @@
     "yaml.format.enable": true,
     "yaml.validate": true,
     "yaml.hover": true,
-    "yaml.completion": true
+    "yaml.completion": true,
+    "cmake.sourceDirectory": "/home/mohammedazab/ws/src/race_stack/myDev/giu_f1t_interfaces"
 }
