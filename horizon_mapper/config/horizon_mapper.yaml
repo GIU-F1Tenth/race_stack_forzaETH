@@ -1,0 +1,28 @@
+# Horizon Mapper Configuration
+# Trajectory processing and publishing parameters for F1TENTH MPC controller
+
+horizon_mapper_node:
+  ros__parameters:
+    # Logging
+    enable_logging: true
+    
+    
+    optimal_trajectory_path: "/home/mohammedazab/ws/src/race_stack/horizon_mapper/horizon_mapper/optimal_trajectory.csv"
+    reference_trajectory_path: "/home/mohammedazab/ws/src/race_stack/horizon_mapper/horizon_mapper/reference_trajectory.csv"
+
+    # MPC Horizon parameters
+    horizon_N: 8              # Number of prediction steps
+    horizon_T: 0.5            # Time horizon (seconds)
+    
+    # Vehicle parameters
+    wheelbase: 0.33           # Vehicle wheelbase (meters)
+    max_steering_angle: 0.5   # Maximum steering angle (radians)
+    min_speed: 0.1            # Minimum velocity (m/s)
+    
+    # ROS topics
+    odom_topic: "/car_state/odom"
+    
+    # Trajectory processing parameters
+    trajectory_smoothing: true
+    velocity_smoothing: true
+    min_trajectory_length: 10

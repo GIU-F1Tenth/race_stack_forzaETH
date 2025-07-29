@@ -1,0 +1,14 @@
+# Core dependencies
+numpy>=1.21.0
+rclpy>=3.3.0
+
+# Development dependencies
+pytest>=6.0.0
+pytest-cov>=2.12.0
+flake8>=4.0.0
+black>=22.0.0
+isort>=5.10.0
+
+# Optional dependencies for enhanced functionality
+matplotlib>=3.5.0  # For trajectory visualization
+scipy>=1.7.0       # For advanced mathematical operations
