@@ -1,0 +1,12 @@
+sector_tuner:
+  ros__parameters:
+    global_limit: 0.8
+    n_sectors: 2
+    Sector0:
+      limit: 0.6
+      start_id: 0
+      end_id: 164 # Half the track (329/2)
+    Sector1:
+      limit: 0.8
+      start_id: 164
+      end_id: 329 # Full track length

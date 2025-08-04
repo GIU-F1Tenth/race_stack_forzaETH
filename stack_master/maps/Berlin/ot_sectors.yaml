@@ -1,0 +1,13 @@
+ot_sectors:
+  ros__parameters:
+    n_zones: 2
+    Zone0:
+      start_id: 50
+      end_id: 150
+      type: "straight"
+      description: "Main straight section"
+    Zone1:
+      start_id: 200
+      end_id: 280
+      type: "corner_exit"
+      description: "Fast corner exit section"
