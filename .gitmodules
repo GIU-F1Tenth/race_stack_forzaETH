@@ -22,5 +22,8 @@
 	path = planner/horizon_mapper
 	url = https://github.com/GIU-F1Tenth/horizon_mapper.git
 [submodule "controller/kayn-controller"]
-	path = controller/kayn-controller
+	path = kayn-controller
 	url = https://github.com/GIU-F1Tenth/kayn-controller.git
+[submodule "system_identification/giu_f1t_interfaces"]
+	path = system_identification/giu_f1t_interfaces
+	url = https://github.com/GIU-F1Tenth/giu_f1t_interfaces.git
