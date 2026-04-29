@@ -5,8 +5,8 @@ services:
       dockerfile: .devcontainer/Dockerfile.x86
       args:
         - USERNAME=${USER}
-        - UID=${UID}
-        - GID=${GID}
+        - UID=${DOCKER_UID:-1000}
+        - GID=${DOCKER_GID:-1000}
     image: nuc_forzaeth_racestack_ros2:humble
   jet:
     build:
@@ -14,8 +14,8 @@ services:
       dockerfile: .devcontainer/Dockerfile.arm
       args:
         - USERNAME=${USER}
-        - UID=${UID}
-        - GID=${GID}
+        - UID=${DOCKER_UID:-1000}
+        - GID=${DOCKER_GID:-1000}
     image: jet_forzaeth_racestack_ros2:humble
   sim_x86:
     build:
@@ -23,6 +23,6 @@ services:
       dockerfile: .devcontainer/Dockerfile.x86
       args:
         - USERNAME=${USER}
-        - UID=${UID}
-        - GID=${GID}
+        - UID=${DOCKER_UID:-1000}
+        - GID=${DOCKER_GID:-1000}
     image: sim_x86_forzaeth_racestack_ros2:humble
