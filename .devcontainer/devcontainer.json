@@ -2,11 +2,18 @@
     "name": "ForzaETH Race Stack Humble",
     "privileged": true,
     "remoteUser": "${localEnv:USER}",
-    "image": "sim_x86_forzaeth_racestack_ros2:humble",
-    // "image": "nuc_forzaeth_racestack_ros2:humble",
+    "updateRemoteUserUID": true,
+    "image": "jet_forzaeth_racestack_ros2:humble",
+    "build": {
+        "dockerfile": ".devcontainer/Dockerfile.arm",
+        "context": "..",
+        "args": {
+            "USERNAME": "${localEnv:USER}"
+        }
+    },
     "initializeCommand": "/bin/bash -c 'source ${localWorkspaceFolder}/.devcontainer/xauth_setup.sh'",
-    "workspaceFolder": "/home/${localEnv:USER}/ws/src/race_stack/",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/${localEnv:USER}/ws/src/race_stack,type=bind",
+    "workspaceFolder": "/home/${localEnv:USER}/ws/src/racing_playground/",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/${localEnv:USER}/ws/src/racing_playground,type=bind",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -53,5 +60,5 @@
         "source=${localWorkspaceFolder}/../cache/humble/install,target=/home/${localEnv:USER}/ws/install,type=bind",
         "source=${localWorkspaceFolder}/../cache/humble/log,target=/home/${localEnv:USER}/ws/log,type=bind"
     ],
-    "postCreateCommand": "~/ws/src/race_stack/.install_utils/post_create_command.sh"
+    "postCreateCommand": "~/ws/src/racing_playground/.install_utils/post_create_command.sh"
 }
