@@ -12,7 +12,7 @@
 
     <!-- Crawl backwards to find the maps in the src folder. -->
     <let name="map_src_path"
-        value="$(find-pkg-prefix stack_master)/../../src/race_stack/stack_master/maps/$(var map_name)" />
+        value="$(find-pkg-prefix stack_master)/../../src/racing_playground/stack_master/maps/$(var map_name)" />
 
     <!-- ON PHYSICAL SYSTEM -->
     <group unless="$(var sim)">

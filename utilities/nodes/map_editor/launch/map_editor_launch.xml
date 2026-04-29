@@ -19,7 +19,7 @@
 
     <!-- Crawl backwards to find the maps in the src folder. -->
     <let name="map_src_path"
-        value="$(find-pkg-prefix stack_master)/../../src/race_stack/stack_master/maps/$(var map_name)" />
+        value="$(find-pkg-prefix stack_master)/../../src/racing_playground/stack_master/maps/$(var map_name)" />
 
     <!-- Mapping but only want to get .png, .yaml and .pbstream without global waypoints calc -->
     <group if="$(var map_editor_mapping)">

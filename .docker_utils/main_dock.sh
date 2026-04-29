@@ -1,12 +1,12 @@
 #!/bin/bash
-# filepath: /home/mohammedazab/ws/src/race_stack/.docker_utils/main_dock.sh
+# filepath: /home/ubuntu/sim/racing_playground/.docker_utils/main_dock.sh
 
 # Script to launch the main docker instance for the pblf110 car
-IMAGE=sim_x86_forzaeth_racestack_ros2 # for x86
-# IMAGE=jet_forzaeth_racestack_ros2 # for ARM
+#IMAGE=sim_x86_forzaeth_racestack_ros2 # for x86
+IMAGE=jet_forzaeth_racestack_ros2 # for ARM
 
 # Set proper paths for your system
-FORZETH_DIR=/home/mohammedazab/ws/src/race_stack
+FORZETH_DIR=/home/ubuntu/sim/racing_playground
 XAUTH_LOC=/home/$USER/.Xauthority
 
 # Create cache directories if they don't exist
@@ -37,7 +37,7 @@ docker run --tty \
     --volume $FORZETH_DIR/../cache/humble/build:/home/$USER/ws/build \
     --volume $FORZETH_DIR/../cache/humble/install:/home/$USER/ws/install \
     --volume $FORZETH_DIR/../cache/humble/log:/home/$USER/ws/log \
-    --volume $FORZETH_DIR:/home/$USER/ws/src/race_stack \
+    --volume $FORZETH_DIR:/home/$USER/ws/src/racing_playground \
     --privileged \
     --name forzaeth_racestack_ros2_humble \
     --entrypoint /bin/bash \
