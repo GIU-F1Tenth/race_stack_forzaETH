@@ -1,12 +1,19 @@
 sector_tuner:
   ros__parameters:
-    global_limit: 0.8
+    map_name: "Berlin"
+    global_limit: 1.0
     n_sectors: 2
+
     Sector0:
-      limit: 0.6
-      start_id: 0
-      end_id: 164 # Half the track (329/2)
+      start: 0.0
+      end: 35.0
+      scaling: 1.0
+      only_FTG: false
+      no_FTG: false
+
     Sector1:
-      limit: 0.8
-      start_id: 164
-      end_id: 329 # Full track length
+      start: 35.0
+      end: 70.0
+      scaling: 1.0
+      only_FTG: false
+      no_FTG: false

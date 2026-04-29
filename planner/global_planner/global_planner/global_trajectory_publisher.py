@@ -69,7 +69,9 @@ class GlobalRepublisher(Node):
                     self.glb_sp_markers, self.glb_sp_wpnts, self.track_bounds
                 ) = read_global_waypoints(map_dir=map_path)
             except FileNotFoundError:
-                self.get_logger().warn(f"{map_path} param not found. Not publishing")
+                self.get_logger().warn(f"{map_path}/global_waypoints.json not found. Not publishing pre-loaded waypoints.")
+            except (KeyError, Exception) as e:
+                self.get_logger().info(f"Could not load global_waypoints.json from {map_path}: {e}. Not publishing pre-loaded waypoints.")
         else:
             self.get_logger().info(f"global_trajectory_publisher did not find any map_path param {map_path}")
 

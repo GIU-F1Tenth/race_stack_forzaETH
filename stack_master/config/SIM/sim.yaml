@@ -23,7 +23,7 @@
 bridge:
   ros__parameters:
     # topics and namespaces
-    ego_namespace: 'car_state'
+    ego_namespace: 'ego_racecar'
     ego_scan_topic: 'scan'
     ego_odom_topic: 'odom'
     ego_pose_topic: 'pose' 

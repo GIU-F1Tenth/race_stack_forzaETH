@@ -83,7 +83,7 @@ class LapAnalyser(Node):
         package_path = get_package_share_directory('lap_analyser')
         ws_path = os.path.abspath(os.path.join(package_path, '..', '..', '..', '..'))
         data_path = os.path.join(ws_path, 'data/lap_analyser')
-        self.get_logger().warn(data_path)
+        self.get_logger().info(f"Lap analyser data path: {data_path}")
         if not os.path.exists(data_path):
             os.makedirs(data_path)
         

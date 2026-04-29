@@ -1,13 +1,17 @@
-ot_sectors:
+ot_interpolator:
   ros__parameters:
-    n_zones: 2
-    Zone0:
-      start_id: 50
-      end_id: 150
-      type: "straight"
-      description: "Main straight section"
-    Zone1:
-      start_id: 200
-      end_id: 280
-      type: "corner_exit"
-      description: "Fast corner exit section"
+    map_name: "Berlin"
+    n_sectors: 2
+    yeet_factor: 1.25
+    spline_len: 30
+    ot_sector_begin: 0.5
+
+    Overtaking_sector0:
+      start: 0
+      end: 163
+      ot_flag: false
+
+    Overtaking_sector1:
+      start: 164
+      end: 327
+      ot_flag: false
