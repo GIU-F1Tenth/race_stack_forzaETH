@@ -18,3 +18,9 @@
 	path = sensors/vesc
 	url = https://github.com/ForzaETH/vesc.git
 	branch = foxy
+[submodule "planner/horizon_mapper"]
+	path = planner/horizon_mapper
+	url = https://github.com/GIU-F1Tenth/horizon_mapper.git
+[submodule "controller/kayn-controller"]
+	path = controller/kayn-controller
+	url = https://github.com/GIU-F1Tenth/kayn-controller.git
