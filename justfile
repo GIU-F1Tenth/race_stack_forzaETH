@@ -48,3 +48,13 @@ sim subcommand *args:
 # NOTE: sourcing install/setup.bash runs in a subshell; run it manually after.
 build:
     "{{WORKSPACE}}/scripts/build.sh"
+
+# ── keyboard ──────────────────────────────────────────────────────────────────
+# Run arrow-key teleop for Ackermann drive.
+# Usage: just keyboard [--ros-args ...]
+keyboard *args:
+  #!/usr/bin/env bash
+  set -eo pipefail
+  source "{{ROS_SETUP}}"
+  source "{{WS_INSTALL}}"
+  ros2 run teleop_tools keyboard_teleop {{args}}
